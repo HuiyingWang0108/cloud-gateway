@@ -11,6 +11,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 public class CloudGatewayApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("spring.config.name", "application");
 		SpringApplication.run(CloudGatewayApplication.class, args);
 	}
 
